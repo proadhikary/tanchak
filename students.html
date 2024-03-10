@@ -1,65 +1,13 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<!DOCTYPE html>
+<html>
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<link rel="icon" type="image/x-icon" href="/images/propic.png">
 	<link rel="stylesheet" href="css/style.css" type="text/css" />
 	<link rel="stylesheet" href="css/icomoon.css" type="text/css" />
-	<link rel="icon" type="image/x-icon" href="/images/propic.png">
 	<style>
-		.hidden {
-			display: none;
-		}
 
-		.card-container {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: space-around;
-		}
-
-		.card {
-			width: 300px;
-			margin: 10px;
-			padding: 15px;
-			background-color: #e7eaf9;
-			border-radius: 8px;
-			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-			text-align: center;
-		}
-
-		.card img {
-			width: 100px;
-			height: 100px;
-			border-radius: 50%;
-			object-fit: cover;
-			margin-bottom: 10px;
-		}
-
-		.card small {
-			color: #777;
-		}
-
-		.button {
-			background-color: #527bbd;
-			/* Green */
-			border: none;
-			border-radius: 12px;
-			color: white;
-			padding: 8px 18px;
-			text-align: center;
-			text-decoration: none;
-			display: inline-block;
-			font-size: 14px;
-			margin: 4px 2px;
-			cursor: pointer;
-			-webkit-transition-duration: 0.4s;
-			/* Safari */
-			transition-duration: 0.4s;
-		}
-
-		button.current:visited {
-			box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-		}
 	</style>
 	<title>Tanmoy Chakraborty | IITD</title>
 </head>
@@ -78,28 +26,23 @@
 				<a href="pubs.html">Publications</a></div><br>
 				<a href="#" class="current">Students</a></div><br>
 				<a href="activities.html">Activities</a></div><br>
+				<a href="talk.html">Talks</a></div><br>
 				<a href="teaching.html">Teaching</a></div><br>
 				<a href="coverage.html">Media</a></div><br>
 				<a href="#contact">Contact</a></div>
 				<br><br><a href="https://social-network-analysis.in/"><img src="images/SNA.png" width="50%"></a>
 				<a href="https://www.springer.com/gp/book/9783030626952"><img src="images/fake.png" width="50%"></a>
-				<br><a href="https://lcs2.in/"><img src="images/lcs2.png" width="102%"></a>
+				<br><a href="https://lcs2.in/"><img src="images/logo.png" width="102%"></a>
 			</td>
 
 
 			<td id="layout-content">
 				<br><br>
 				<h2>Students</h2>
-				<nav>
-					<ul>
-						<center>
-							<a href="" onclick="showDiv('phd')"><button class="button">Doctoral</button></a>
-							<a href="" onclick="showDiv('pdoc')"><button class="button">Post
-									Doctoral</button>
-						</center>
-					</ul>
-				</nav>
-				<div id="phd">
+				<button class="button" id="myButton" onclick="showTab('doc')">Doctoral Students</button>
+				<button class="button" onclick="showTab('postdoc')">Post Doctoral Students</button>
+
+				<div id="doc" class="tab-content">
 					<div class="card-container">
 						<div class="card">
 							<img src="images/people/pro.jpeg"><br>
@@ -109,7 +52,7 @@
 						</div>
 						<div class="card">
 							<img src="images/people/aswini_kumar_padhi.jpeg"><br>
-							<b><a href="https://www.linkedin.com/in/proadhikary/"></a>Aswini Kumar Padhi</b></b>
+							<b></a>Aswini Kumar Padhi</b>
 							<p>IIT Delhi (July 2023 - Present)</p>
 							<small>Topic: Counterspeech generation</small>
 						</div>
@@ -184,15 +127,17 @@
 							<b>Subhabrata Dutta</b>
 							<p>Jadavpur University (Co-supervisor: Dr. Dipankar Das) (Aug, 2017 - Dec 2023)
 								<span style="color: red;"> <br>(Graduated;
-								Dec 7, 2023)</span></p>
+									Dec 7, 2023)</span>
+							</p>
 							<small>Topic: Engagement to Persuasion: A Computational Study on Online Social
 								Discourse</small>
 						</div>
 						<div class="card">
 							<img src="images/people/hriday.jpeg"><br>
 							<b>Hridoy Sankar Dutta</b>
-							<p>IIIT Delhi (Aug, 2017 - Sep 2021) <span style="color: red;"> <br>(Graduated: Sep 21, 2021; joined University of
-								Cambridge as a Postdoctoral Fellow)</span></p>
+							<p>IIIT Delhi (Aug, 2017 - Sep 2021) <span style="color: red;"> <br>(Graduated: Sep 21,
+									2021; joined University of
+									Cambridge as a Postdoctoral Fellow)</span></p>
 							<small>Topic: Detecting and reasoning blackmarket activities on social media</small>
 						</div>
 						<div class="card">
@@ -200,12 +145,15 @@
 							<b>Dinesh Pradhan</b>
 							<p>NIT Durgapur (jointly advised by Dr. Subrata Nandi and Dr. Prasenjit Choudhury)
 								<span style="color: red;"> <br>(Graduated;
-								June 17, 2019)</span></p>
+									June 17, 2019)</span>
+							</p>
 							<small>Topic: Dynamics of citation and collaboration networks</small>
 						</div>
 					</div>
 				</div>
-				<div id="pdoc" class="hidden">
+
+				<div id="postdoc" class="tab-content">
+
 					<div class="card-container">
 						<div class="card">
 							<img src="images/people/michael.jpeg"><br>
@@ -229,10 +177,13 @@
 						<a href="skype:tan.chak?call"><i class="icon-skype"></i></a> &nbsp;&nbsp;
 						<a href="https://www.linkedin.com/in/tanmoy-chakraborty-89553324/"><i
 								class="icon-linkedin"></i></a>&nbsp;&nbsp;
+						<a href="https://github.com/LCS2-IIITD"><i
+								class="icon-github"></i></a>&nbsp;&nbsp;
+
 					</p>
-					<p><b>Email</b>:<a href="mailto:chak.tanmoy.iit@gmail.com">chak.tanmoy.iit@gmail.com</a>; <a
-							href="mailto:tanchak@iitd.ac.in">tanchak@iitd.ac.in</a>; <a
-							href="mailto:tanchak@ee.iitd.ac.in">tanchak@ee.iitd.ac.in</a>
+					<p><b>Email</b>:<br><a href="mailto:tanchak@iitd.ac.in">tanchak@iitd.ac.in</a> <br><a
+							href="mailto:tanchak@ee.iitd.ac.in">tanchak@ee.iitd.ac.in</a><br>
+						<a href="mailto:chak.tanmoy.iit@gmail.com">chak.tanmoy.iit@gmail.com*</a>
 					</p>
 					<p><b>Phone</b>: +91-XXXXX-XXXXX</p>
 					<p><b>Address</b>:
@@ -241,20 +192,34 @@
 						Hauz Khas, New Delhi, Delhi 110016, India</p>
 					<small>© Copyright 2024. All Rights are Reserved.</small>
 				</div>
+
 			</td>
 			<td id="buffer">
 			</td>
 		</tr>
 	</table>
+
 	<script>
-		function showDiv(divId) {
-			// Hide both divs initially
-			document.getElementById('phd').style.display = 'none';
-			document.getElementById('pdoc').style.display = 'none';
-			// Show the selected div
-			document.getElementById(divId).style.display = 'block';
+		function showTab(tabId) {
+			hideAllTabs();
+			document.getElementById(tabId).classList.add('visible');
 		}
+		function hideAllTabs() {
+			const tabs = document.querySelectorAll('.tab-content');
+			tabs.forEach(tab => tab.classList.remove('visible'));
+		}
+		function showSubTab(subTabId) {
+			hideAllTabs();
+			document.getElementById(subTabId).classList.add('visible');
+		}
+		function showYearTab(year) {
+			alert(`Show papers for the year ${year}`);
+		}
+		const button = document.querySelector('#myButton');
+		button.addEventListener('click', () => { ddoptinbox.openclose('open') });
+		button.click();
 	</script>
+
 </body>
 
 </html>

@@ -1,12 +1,94 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<!DOCTYPE html>
+<html>
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<link rel="icon" type="image/x-icon" href="/images/propic.png">
 	<link rel="stylesheet" href="css/style.css" type="text/css" />
 	<link rel="stylesheet" href="css/icomoon.css" type="text/css" />
-	<link rel="icon" type="image/x-icon" href="/images/propic.png">
+	<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
 	<title>Tanmoy Chakraborty | IITD</title>
+	<style>
+		.w3-card-4,
+		.w3-hover-shadow:hover {
+			box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19)
+		}
+
+		.w3-container,
+		.w3-panel {
+			padding: 0.01em 16px
+		}
+
+		.w3-container:after,
+		.w3-container:before,
+		.w3-panel:after,
+		.w3-panel:before,
+		.w3-row:after,
+		.w3-row:before,
+		.w3-row-padding:after,
+		.w3-row-padding:before,
+		.w3-cell-row:before,
+		.w3-cell-row:after,
+		.w3-clear:after,
+		.w3-clear:before,
+		.w3-bar:before,
+		.w3-bar:after {
+			content: "";
+			display: table;
+			clear: both
+		}
+
+		.card-container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+
+		.card {
+			width: 45%;
+			margin-bottom: 20px;
+			background-color: #fff;
+			border: 1px solid #ddd;
+			border-radius: 8px;
+			overflow: hidden;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		}
+
+		#cardimg {
+			width: 100%;
+			height: auto;
+			border-bottom: 1px solid #ddd;
+			border-radius: 0;
+		}
+
+		.card-body {
+			margin-top: -30px;
+			padding: 5px;
+		}
+
+		.card-title {
+			font-size: 16px;
+			font-weight: bold;
+			margin-bottom: 10px;
+			text-align: left;
+		}
+
+		.card-text {
+			font-size: 14px;
+			color: #555;
+			margin-bottom: 15px;
+			text-align: left;
+		}
+
+		.btn-primary {
+			display: inline-block;
+			padding: 8px 16px;
+			background-color: #007bff;
+			color: #fff;
+			text-decoration: none;
+			border-radius: 4px;
+		}
+	</style>
 </head>
 
 <body>
@@ -17,23 +99,214 @@
 				<div class="menu-item">
 					<a href="index.html"">Home</a>
 				</div>
-				<a href="index.html#about">About</a></div><br>
+				<a href=" index.html#about">About</a>
+				</div><br>
 				<a href=" awards.html">Awards</a>
 				</div><br>
 				<a href="pubs.html">Publications</a></div><br>
 				<a href="students.html">Students</a></div><br>
 				<a href="activities.html">Activities</a></div><br>
+				<a href="talk.html">Talks</a></div><br>
 				<a href="teaching.html">Teaching</a></div><br>
 				<a href="#" class="current">Media</a></div><br>
 				<a href="#contact">Contact</a></div>
 				<br><br><a href="https://social-network-analysis.in/"><img src="images/SNA.png" width="50%"></a>
 				<a href="https://www.springer.com/gp/book/9783030626952"><img src="images/fake.png" width="50%"></a>
-				<br><a href="https://lcs2.in/"><img src="images/lcs2.png" width="102%"></a>
+				<br><a href="https://lcs2.in/"><img src="images/logo.png" width="102%"></a>
 			</td>
 			<td id="layout-content">
 				<br><br>
 				<h2>Media Coverage</h2>
-				<h3> Will be updated!</h3>
+
+				<div class="card-container">
+					<div class="card">
+						<img id="cardimg" src="images/media/13.png" alt="Card Image">
+						<div class="card-body">
+							<h5 class="card-title">Interviewed by Times of India (TOI) AI and ML in checking cheating
+								during Exams</h5>
+							<p style="text-align: left;"><small>Sep 19, 2022</small></p>
+							<p class="card-text">Explained how AI/ML can be used to stop cheating
+								in exams.</p>
+							<a href="https://epaper.timesgroup.com/article-share?article=19_09_2022_704_003_cap_TOI"
+								class="btn btn-primary">Interview</a>
+						</div>
+					</div>
+
+					<div class="card">
+						<img src="images/media/12.png" id="cardimg"
+							alt="Social media for personality prediction" >
+						<div class="card-body">
+							<h5 class="card-title">Interviewed by Educlassess on research, book, IIITD, TIH
+								and other aspects of my life</h5>
+							<p style="text-align: left;">
+								<small>July 7, 2021</small>
+							</p>
+							<p class="card-text">I explained our research and other aspects of life.</p>
+							<a href="https://educlasses.co.in/interview-dr-tanmoy-chakraborty-nlp-data-science-educator-iiit-delhi.html"
+								class="btn btn-primary">Interview</a>
+
+						</div>
+					</div>
+
+					<div class="card">
+						<img src="images/media/11.png" id="cardimg"
+							alt="Social media for personality prediction" >
+						<div class="card-body">
+							<h5 class="card-title">Interviewed by SlayLife on changing education system
+								trends in India in the inaugural Teacher's Podcast</h5>
+							<p style="text-align: left;">
+								<small>Nov 4, 2020</small>
+							</p>
+							<p class="card-text">I explained my perspectives about education and student
+								life.</p>
+							<a href="https://www.youtube.com/watch?v=mszeufx4kcM&feature=youtu.be"
+								class="btn btn-primary">Video</a>
+
+						</div>
+					</div>
+
+					<div class="card">
+						<img src="images/media/10.png" id="cardimg"
+							alt="Social media for personality prediction" >
+						<div class="card-body">
+							<h5 class="card-title">Blog: Engagement Dynamics of Online Discussions using
+								Relativistic Gravitational Theory</h5>
+							<p style="text-align: left;">
+								<small>June 25, 2020</small>
+							</p>
+							<p class="card-text">Explaining in layman's terms our ICDM'19 paper on Online
+								Discussions using Relativistic Gravitational Theory</p>
+							<a href="https://towardsdatascience.com/engagement-dynamics-of-online-discussions-using-relativistic-gravitational-theory-77bbb25f90e2#416d-8230ce950e94"
+								class="btn btn-primary">Read</a>
+
+						</div>
+					</div>
+
+					<div class="card">
+						<img src="images/media/9.png" id="cardimg"
+							alt="Social media for personality prediction" >
+						<div class="card-body">
+							<h5 class="card-title">Tale of consent: Preventing exploitation of private data
+							</h5>
+							<p style="text-align: left;">
+								<small>Aug 30, 2019</small>
+							</p>
+							<p class="card-text">My view on exploiting data privacy covered by CIOL</p>
+							<a href="https://www.ciol.com/tale-consent-preventing-exploitation-private-data/#.XWdtC63T1gg.twitter"
+								class="btn btn-primary">Read</a>
+
+						</div>
+					</div>
+
+					<div class="card">
+						<img src="images/media/8.png" id="cardimg" alt="Social media for personality prediction"
+							>
+						<div class="card-body">
+							<h5 class="card-title">AI and Social Media for human personality prediction</h5>
+							<p style="text-align: left;">
+								<small>May 21, 2019</small>
+							</p>
+							<p class="card-text">Research on personality and values prediction</p>
+							<a href="https://economictimes.indiatimes.com/tech/internet/iiit-delhi-scans-social-media-use-with-ai-to-predict-personality/articleshow/69417781.cms?utm_source%3Dfacebook_web%26utm_medium%3Dsocial%26utm_campaign%3Dsocialsharebuttons"
+								class="btn btn-primary">Read</a>
+
+						</div>
+</div>
+						<div class="card">
+							<img src="images/media/7.png" id="cardimg"
+								alt="Research collaboration with Hike Messenger" >
+							<div class="card-body">
+								<h5 class="card-title">Research collaboration with Hike Messenger</h5>
+								<p style="text-align: left;">
+									<small>May 6, 2019</small>
+								</p>
+								<p class="card-text">Hike proudly unveiled their groundbreaking research collaboration with our LCS2 lab.
+									</p>
+								<a href="https://www.exchange4media.com/digital-news/hike-bets-big-on-artificial-intelligence-machine-learning-96540.html"
+									class="btn btn-primary">Read</a>
+
+							</div>
+						</div>
+
+						<div class="card">
+							<img src="images/media/6.png" id="cardimg"
+								alt="Ensemble Algorithms for Graph Clustering">
+							<div class="card-body">
+								<h5 class="card-title">Community detection in networks</h5>
+								<p style="text-align: left;">
+									<small>Jan 11, 2019</small>
+								</p>
+								<p class="card-text">My blog on "Ensemble algorithms for graph clustering
+									(aka, community detection in networks)" featured in Science Trends</p>
+								<a href="https://sciencetrends.com/no-more-graph-clustering-algorithms-please-disjoint-clustering-algorithms-now-able-to-detect-overlapping-clusters/?fbclid=IwAR0X2WRNcjkLY_VSIr0gDO0eUUHkNuiazHlNOI2gl3SAa7ELXuIjKoQ36BI"
+									class="btn btn-primary">Read</a>
+
+							</div>
+						</div>
+						<div class="card">
+							<img src="images/media/5.png" id="cardimg"
+								alt="Key Differences between AI and ML">
+							<div class="card-body">
+								<h5 class="card-title">Key differences between AI and ML</h5>
+								<p style="text-align: left;">
+									<small>Dec 21, 2018</small>
+								</p>
+								<p class="card-text">My thoughts on the "Key differences between AI and ML"
+									covered by CiOL Magazine</p>
+								<a href="https://www.ciol.com/dont-confused-key-differences-ai-machine-learning/#.XCBnBDZe3mg.twitter"
+									class="btn btn-primary">Read</a>
+							</div>
+						</div>
+						<div class="card">
+							<img src="images/media/4.png" id="cardimg" alt="silicon india">
+							<div class="card-body">
+								<h5 class="card-title">Future of Data Engineering and Data Science</h5>
+								<p style="text-align: left;"><small>
+										Nov 24, 2018
+									</small></p>
+								<p class="card-text">My thoughts on the "Future of Data Engineering and Data
+									Science" covered by SiliconIndia Magazine</p>
+								<a href="https://sites.google.com/site/tanmoychakra88/media-coverage/Silicon%20India%2C%20November%2C%202018%2C%20Pg-32.jpg?attredirects=0&attachauth=ANoY7croPJmE-R1kNVFjROxAzXz3UGHP_49YKx4ehJnWUCK6F2xzUAflfFcXF5J9h28mB447a4UZjZuu4U3vwaTv3rCtlyddMJzxQgFgvYENrNvxSzIx9qNUE86iOUL9cwD4MYwdg6wJOsUIj0g5SnyNdSonjGaro8FiI5GCWZs76NgH82JwZcz9V7-kE0ffNJfEvQJoTuGyC_heMHBQ3QpwHsKSvMVhYiv-unmOJ0a_E0PzEU_jdrtDCVcuvyQ3hi5F7c377hoJaWu-CRb09g6CGhTe1Yp29Q%3D%3D"
+									class="btn btn-primary">Read</a>
+							</div>
+						</div>
+						<div class="card">
+							<img src="images/media/3.png" id="cardimg" alt="bartaman patrika">
+							<div class="card-body">
+								<h5 class="card-title">Bartaman Patrika</h5>
+								<p style="text-align: left;"><small>Sep 12, 2016</small></p>
+								<p class="card-text">Featured in Bartaman patrika, a Bengali News Paper</p>
+								<a href="images/media/3.png"
+									class="btn btn-primary">Read</a>
+							</div>
+						</div>
+						<div class="card">
+							<img src="images/media/2.png" id="cardimg" alt="tanmoy">
+							<div class="card-body">
+								<h5 class="card-title">Sangbad Pratidin</h5>
+								<p style="text-align: left;">
+									<small>Sep 11, 2016</small>
+								</p>
+								<p class="card-text">Featured in Sangbad Pratidin, a Bengali News Paper</p>
+								<a href="images/media/Pratidin copy.jpg"
+									class="btn btn-primary">Read</a>
+							</div>
+						</div>
+						<div class="card">
+							<img src="images/media/1.png" id="cardimg" alt="tanmoy">
+							<div class="card-body">
+								<h5 class="card-title">Interview</h5>
+								<p style="text-align: left;">
+									<small>April 26, 2016</small>
+								</p>
+								<p class="card-text"> My Interviewed covered by Machine Learning-India</p>
+								<a href="http://ml-india.org/ml-india-interview-tanmoy-chakraborty/"
+									class="btn btn-primary">Read</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
 				<br>
 				<hr>
 				<br>
@@ -44,10 +317,12 @@
 						<a href="skype:tan.chak?call"><i class="icon-skype"></i></a> &nbsp;&nbsp;
 						<a href="https://www.linkedin.com/in/tanmoy-chakraborty-89553324/"><i
 								class="icon-linkedin"></i></a>&nbsp;&nbsp;
+						<a href="https://github.com/LCS2-IIITD"><i class="icon-github"></i></a>&nbsp;&nbsp;
+
 					</p>
-					<p><b>Email</b>:<a href="mailto:chak.tanmoy.iit@gmail.com">chak.tanmoy.iit@gmail.com</a>; <a
-							href="mailto:tanchak@iitd.ac.in">tanchak@iitd.ac.in</a>; <a
-							href="mailto:tanchak@ee.iitd.ac.in">tanchak@ee.iitd.ac.in</a>
+					<p><b>Email</b>:<br><a href="mailto:tanchak@iitd.ac.in">tanchak@iitd.ac.in</a> <br><a
+							href="mailto:tanchak@ee.iitd.ac.in">tanchak@ee.iitd.ac.in</a><br>
+						<a href="mailto:chak.tanmoy.iit@gmail.com">chak.tanmoy.iit@gmail.com*</a>
 					</p>
 					<p><b>Phone</b>: +91-XXXXX-XXXXX</p>
 					<p><b>Address</b>:
@@ -56,6 +331,7 @@
 						Hauz Khas, New Delhi, Delhi 110016, India</p>
 					<small>© Copyright 2024. All Rights are Reserved.</small>
 				</div>
+
 			</td>
 			<td id="buffer">
 			</td>
