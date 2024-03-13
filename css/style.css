@@ -127,6 +127,10 @@ div#subtitle {
 	padding-bottom: 0.1em;
 }
 
+div a:hover {
+	background-color: #eee;
+}
+
 em {
 	font-style: italic;
 }
